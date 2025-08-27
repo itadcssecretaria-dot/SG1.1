@@ -1,10 +1,6 @@
 import os
 import sys
 
-# Carrega as variáveis de ambiente do arquivo .env antes de qualquer importação
-from dotenv import load_dotenv
-load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
-
 # DON\"T CHANGE THIS !!!
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
@@ -43,3 +39,4 @@ def serve(path):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001, debug=True)
+
